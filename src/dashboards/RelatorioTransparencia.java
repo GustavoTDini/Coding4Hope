@@ -2,16 +2,17 @@ package dashboards;
 
 import java.util.Date;
 
+
 public class RelatorioTransparencia {
 
     private Date dataDoacao;
-    private double valorDoacaço;
+    private double valorDoacao;
     private int quantidadeDoacao;
     private String gastos;
 
-    public RelatorioTransparencia(Date dataDoacao, double valorDoacaço, int quantidadeDoacao, String gastos) {
+    public RelatorioTransparencia(Date dataDoacao, double valorDoacao, int quantidadeDoacao, String gastos) {
         this.dataDoacao = dataDoacao;
-        this.valorDoacaço = valorDoacaço;
+        this.valorDoacao = valorDoacao;
         this.quantidadeDoacao = quantidadeDoacao;
         this.gastos = gastos;
     }
@@ -24,12 +25,12 @@ public class RelatorioTransparencia {
         this.dataDoacao = dataDoacao;
     }
 
-    public double getValorDoacaço() {
-        return valorDoacaço;
+    public double getValorDoacao() {
+        return valorDoacao;
     }
 
-    public void setValorDoacaço(double valorDoacaço) {
-        this.valorDoacaço = valorDoacaço;
+    public void setValorDoacao(double valorDoacao) {
+        this.valorDoacao = valorDoacao;
     }
 
     public int getQuantidadeDoacao() {

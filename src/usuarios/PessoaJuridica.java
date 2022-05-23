@@ -1,5 +1,13 @@
 package usuarios;
 
+
+/**
+ * Classe para definir o cadastro de doador de pessoa juridica, extende Doador e adiciona a informação de CNPJ,
+ * para validar a questão tributária para a inclusão do CNPJ,
+ * é necessário realizar a validação do mesmo atraves da função isCnpj.
+ * @see Doador
+ * @author Turing
+ */
 public class PessoaJuridica extends Doador{
     private String cnpj = "";
 
@@ -20,6 +28,12 @@ public class PessoaJuridica extends Doador{
         }
     }
 
+    /**
+     * Methodo que irá validar a entrada de CNPJ, realizando o algoritmo disponivel do Governo, para este fim
+     * @param cnpj String contendo o número do CNPJ
+     * @return Retorna true se o CNPJ é valido
+     * @author Turing
+     */
     public boolean isCnpj(String cnpj) {
 
         /*A primeira validação será verificar se o cnpj fornecido é um que possui dígitos iguais ou se ele tem tamanho superior a 14*/

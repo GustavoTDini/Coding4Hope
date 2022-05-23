@@ -1,5 +1,11 @@
 package usuarios;
 
+
+/**
+ * Classe para definir os dados de entrada de um endereço, apresenta os diversos
+ * elementos para a confeção de um endereço completo
+ * @author Turing
+ */
 public class Endereco {
 
     private String logradouro;

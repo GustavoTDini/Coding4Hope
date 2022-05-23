@@ -2,6 +2,11 @@ package doacoes;
 
 import java.util.Date;
 
+/**
+ * Classe basica que traz os dados completos de uma doação - valor, data, e tipo,
+ * além de mostrar a quantidade de doações totais.
+ * @author Turing
+ */
 public class HistoricoDoacoes {
 
     private Date dataDoacao;
@@ -51,14 +56,28 @@ public class HistoricoDoacoes {
         this.tipoDoacao = tipoDoacao;
     }
 
-    public void somarDoacçoes(){
+    /**
+     * Methodo que somar os valores de doações caso houver várias do mesmo tipo, no histórico
+     * @author Turing
+     */
+    public void somarDoacoes(){
 
     }
 
+    /**
+     * Methodo que somar a quantidade de doações no histórico
+     * @author Turing
+     */
     public void quantidadeDoacoes(){
 
     }
 
+    /**
+     * Methodo para validar caso a doação seja efetivada e não houver erro no envio
+     * @see TipoDoacao
+     * @return true se a Doação foi válida
+     * @author Turing
+     */
     public boolean validarDoacao(){
         return true;
     }

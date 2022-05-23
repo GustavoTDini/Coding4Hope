@@ -1,5 +1,13 @@
 package usuarios;
 
+/**
+ * Classe para definir o cadastro de doador de pessoa fisica, extende Doador e adiciona a informação de CPF,
+ * para validar a questão tributária para a inclusão do CPF,
+ * é necessário realizar a validação do mesmo atraves da função isCPF.
+ * @see Doador
+ * @author Turing
+ */
+
 public class PessoaFisica extends Doador{
     private String cpf = "";
 
@@ -20,6 +28,12 @@ public class PessoaFisica extends Doador{
         }
     }
 
+    /**
+     * Methodo que irá validar a entrada de CPF, realizando o algoritmo disponivel do Governo, para este fim
+     * @param cpf String contendo o número do CPF
+     * @return Retorna true se o CPF é valido
+     * @author Turing
+     */
     public boolean isCpf(String cpf) {
         /*A primeira validação será verificar se o cpf fornecido é um que possui dígitos iguais ou se ele tem tamanho superior a 11*/
         if(cpf.equals("00000000000")||cpf.equals("11111111111")||cpf.equals("22222222222")||cpf.equals("33333333333")

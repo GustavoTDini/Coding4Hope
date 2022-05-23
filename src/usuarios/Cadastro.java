@@ -2,6 +2,12 @@ package usuarios;
 
 import java.util.Date;
 
+
+/**
+ * Classe para definir o cadastro extende usuario e utiliza os dados de entrada desta.
+ * @see Usuario
+ * @author Turing
+ */
 public class Cadastro extends Usuario{
 
     private String nome;

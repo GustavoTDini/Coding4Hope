@@ -1,5 +1,9 @@
 package usuarios;
 
+/**
+ * Classe basica para personalizar a experiência de um visitante no site
+ * @author Turing
+ */
 public class Vistante {
 
     private String nome;
@@ -16,6 +20,10 @@ public class Vistante {
         this.nome = nome;
     }
 
+    /**
+     * Methodo opara definir o idioma mostrado no site
+     * @author Turing
+     */
     public void definirIdioma(){
         // set Idioma no FrontEnd
     }

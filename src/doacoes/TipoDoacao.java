@@ -1,5 +1,10 @@
 package doacoes;
 
+
+/**
+ * Classe basica para definir a forma de pagamento da doação, irá ser utilizado nas doações.
+ * @author Turing
+ */
 public class TipoDoacao {
 
     private boolean pix;
@@ -49,6 +54,10 @@ public class TipoDoacao {
         this.superLink = superLink;
     }
 
+    /**
+     * Methodo que utiliza o tipo da doação para fazer o envio de dados para pagamento
+     * @author Turing
+     */
     public void enviarDadosOperadora(){
 
     }

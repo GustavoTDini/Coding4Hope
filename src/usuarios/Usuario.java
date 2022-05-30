@@ -7,11 +7,11 @@ import java.util.UUID;
  * e uma senha, além de atribuir um ‘id’ unico com o tipo UUID
  * @author Turing
  */
-public class Usuario {
+public abstract class Usuario {
 
     private String login;
     private String senha;
-    private UUID _id;
+    private final UUID _id;
 
     public Usuario() {
         this._id = UUID.randomUUID();
@@ -50,7 +50,6 @@ public class Usuario {
      */
     public void adicionarCadastro(){
         //Iremos adicionar esse novo usuario no banco de dados
-        Usuario usuario = new Usuario();
     }
 
     /**
